@@ -3,7 +3,7 @@
 footer {
     border-top: 1px solid #272424;
     background-color: #EDF5FE;
-    height: 500px;
+    padding-bottom: 20px;
 }
 
 footer .footer_area .footer_ul {
@@ -12,6 +12,11 @@ footer .footer_area .footer_ul {
     height: 45px;
     padding-bottom: 20px;
 
+}
+
+footer .footer_section img {
+    height: 117px;
+    margin-bottom: 20px;
 }
 
 footer .footer_area ul {
@@ -39,10 +44,6 @@ footer .footer_area ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.footer_section .logo_box img {
-    height: 150px;
-    max-width: 100%;
 }
 
 .link_list {
