@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporary Product Page</title>
+  </head>
+  <body>
+    <h1>Product Details</h1>
+    <!-- 데이터가 여기에 주입됩니다 -->
+
+    <button id="backButton">Go Back</button><br />
+
+    <script>
+      $(document).ready(function () {
+        $('#backButton').on('click', function () {
+          location.href = 'UserShopping.html'; // 명시적으로 'main.html'로 이동
+        });
+      });
+    </script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
