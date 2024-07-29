@@ -1,0 +1,338 @@
+[
+  {
+    "item" : [
+      {
+        "item_img" :"../images/너구리컵라면.png",
+        "item_name" :"농심 너구리 컵라면 62g 24개",
+        "item_price" :"19,940",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/진라면.png",
+        "item_name" :"오뚜기 진라면 매운맛 10개",
+        "item_price" :"6,440",
+        "item_count" :"3"
+      },
+      {
+        "item_img" : "../images/진라면순한맛.png",
+        "item_name" :"오뚜기 진라면 순한맛 소컵 20개",
+        "item_price" :"15,000",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2024-07-25",
+    "order_state" : "주문완료",
+    "order_number" : "1304793264",
+    "discount_price" : "0",
+    "buyer_name" : "원승언",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "원승언",
+    "receiver_address" : "경기도 시흥시 은행동",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "상품 준비중",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "1",
+    "zip_code" :"12645",
+    "address_nickname" : "누나집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/도시락라면.png",
+        "item_name" :"팔도 도시락 컵라면 86g 12개",
+        "item_price" :"8,950",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/해물라면.png",
+        "item_name" :"팔도 일품 해물라면 6개",
+        "item_price" :"6,240",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2021-07-15",
+    "order_state" : "주문완료",
+    "order_number" : "10295638498",
+    "discount_price" : "0",
+    "buyer_name" : "홍길동",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "홍길동",
+    "receiver_address" : "경기도 서울시 관악구",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "결제완료",
+    "payment_method" :"하나은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"11345",
+    "address_nickname" : "동생집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/도시락라면.png",
+        "item_name" :"팔도 도시락 컵라면 86g 12개",
+        "item_price" :"8,950",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/해물라면.png",
+        "item_name" :"팔도 일품 해물라면 6개",
+        "item_price" :"6,240",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2022-04-15",
+    "order_state" : "주문완료",
+    "order_number" : "1204794264",
+    "discount_price" : "0",
+    "buyer_name" : "김연호",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "김연호",
+    "receiver_address" : "부산광역시 중구",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "배송중",
+    "payment_method" :"IBK 기업은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"12346",
+    "address_nickname" : "사촌누나집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/도시락라면.png",
+        "item_name" :"팔도 도시락 컵라면 86g 12개",
+        "item_price" :"8,950",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/해물라면.png",
+        "item_name" :"팔도 일품 해물라면 6개",
+        "item_price" :"6,240",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2023-05-15",
+    "order_state" : "주문완료",
+    "order_number" : "10295628498",
+    "discount_price" : "0",
+    "buyer_name" : "김현민",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "김현민",
+    "receiver_address" : "경기도 오산",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "배송시작",
+    "payment_method" :"NH 농협은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"12245",
+    "address_nickname" : "아빠집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/도시락라면.png",
+        "item_name" :"팔도 도시락 컵라면 86g 12개",
+        "item_price" :"8,950",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/해물라면.png",
+        "item_name" :"팔도 일품 해물라면 6개",
+        "item_price" :"6,240",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2024-06-15",
+    "order_state" : "주문완료",
+    "order_number" : "10295658498",
+    "discount_price" : "0",
+    "buyer_name" : "윤채원",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "윤채원",
+    "receiver_address" : "경기도 광주시",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "배송완료",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"14345",
+    "address_nickname" : "할머니집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/너구리컵라면.png",
+        "item_name" :"농심 너구리 컵라면 62g 24개",
+        "item_price" :"19,940",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/진라면.png",
+        "item_name" :"오뚜기 진라면 매운맛 10개",
+        "item_price" :"6,440",
+        "item_count" :"3"
+      },
+      {
+        "item_img" : "../images/진라면순한맛.png",
+        "item_name" :"오뚜기 진라면 순한맛 소컵 20개",
+        "item_price" :"15,000",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2024-04-25",
+    "order_state" : "주문완료",
+    "order_number" : "1204791264",
+    "discount_price" : "0",
+    "buyer_name" : "서장훈",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "서장훈",
+    "receiver_address" : "경기도 부천시 소사동",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "상품 준비중",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"12745",
+    "address_nickname" : "할아버지집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/너구리컵라면.png",
+        "item_name" :"농심 너구리 컵라면 62g 24개",
+        "item_price" :"19,940",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/진라면.png",
+        "item_name" :"오뚜기 진라면 매운맛 10개",
+        "item_price" :"6,440",
+        "item_count" :"3"
+      },
+      {
+        "item_img" : "../images/진라면순한맛.png",
+        "item_name" :"오뚜기 진라면 순한맛 소컵 20개",
+        "item_price" :"15,000",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2022-07-25",
+    "order_state" : "주문완료",
+    "order_number" : "1202793264",
+    "discount_price" : "0",
+    "buyer_name" : "고길동",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "고길동",
+    "receiver_address" : "인천광역시 미추홀구",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "상품 준비중",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"12505",
+    "address_nickname" : "친척집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/너구리컵라면.png",
+        "item_name" :"농심 너구리 컵라면 62g 24개",
+        "item_price" :"19,940",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/진라면.png",
+        "item_name" :"오뚜기 진라면 매운맛 10개",
+        "item_price" :"6,440",
+        "item_count" :"3"
+      },
+      {
+        "item_img" : "../images/진라면순한맛.png",
+        "item_name" :"오뚜기 진라면 순한맛 소컵 20개",
+        "item_price" :"15,000",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2020-03-25",
+    "order_state" : "주문완료",
+    "order_number" : "1200793264",
+    "discount_price" : "0",
+    "buyer_name" : "박진영",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "박진영",
+    "receiver_address" : "경기도 안산시 상록구",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "상품 준비중",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"12845",
+    "address_nickname" : "친구집"
+  },
+  {
+    "item" : [
+      {
+        "item_img" :"../images/너구리컵라면.png",
+        "item_name" :"농심 너구리 컵라면 62g 24개",
+        "item_price" :"19,940",
+        "item_count" :"2"
+      },
+      {
+        "item_img" : "../images/진라면.png",
+        "item_name" :"오뚜기 진라면 매운맛 10개",
+        "item_price" :"6,440",
+        "item_count" :"3"
+      },
+      {
+        "item_img" : "../images/진라면순한맛.png",
+        "item_name" :"오뚜기 진라면 순한맛 소컵 20개",
+        "item_price" :"15,000",
+        "item_count" :"3"
+      }
+    ],
+    "order_date" : "2024-03-13",
+    "order_state" : "주문완료",
+    "order_number" : "1204793264",
+    "discount_price" : "0",
+    "buyer_name" : "조성필",
+    "buyer_email" : "dnjstmddjs12@naver.com",
+    "buyer_tel" : "010-2572-4233",
+    "receiver_name" : "조성필",
+    "receiver_address" : "경기도 시흥시 은행동",
+    "receiver_tel" : "010-2572-4233",
+    "receiver_request" : "문 앞에 놔주세요",
+    "delivery_state" : "상품 준비중",
+    "payment_method" :"KB국민은행",
+    "cancel_date" : "",
+    "delivery_price" : "3000",
+    "default_address" : "0",
+    "zip_code" :"87345",
+    "address_nickname" : "우리집"
+  }
+]

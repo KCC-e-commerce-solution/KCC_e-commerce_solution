@@ -1,0 +1,42 @@
+.main_inner_section {
+  width: 80%;
+  margin-left: auto;
+}
+
+.address_default_box {
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.address_default_info_area {
+  flex : 1;
+}
+
+.default_address_text {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.default_address_comment::before {
+  content: "*";
+  margin-right: 2px;
+}
+
+.form-check-input[type=radio] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.address_list_footer .btn {
+  height: 50px;
+  opacity: 0.7;
+  background: #5055b1;
+  color: #f7f7f7;
+}
+
+.address_list_footer .btn:hover {
+  background: #5055b1;
+  color: aliceblue;
+  opacity: 1;
+}

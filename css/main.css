@@ -1,83 +1,77 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-/*header*/
-/*img.img-circle {*/
-/*    border-radius: 50%;*/
-/*}*/
-
 .container_box {
-    width: 1440px;
-    margin: 0 auto;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 #container {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
-/* */
 .navbar-brand img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .navbar {
-    background-color: #f8f9fa!important;
+  background-color: #f8f9fa !important;
 }
 
 .nav-link {
-    color: #333;
-    font-weight: bold;
+  color: #333;
+  font-weight: bold;
 }
 
 #Sidebar ul li:first-child a.nav-link {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #Sidebar ul li:first-child ~ li a.nav-link {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .search-input {
-    width: 200px;
-    border-radius: 5px;
+  width: 200px;
+  border-radius: 5px;
 }
 
 #Sidebar {
-    padding-top: 20px;
-    width: 15%;
-    background-color: antiquewhite;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    float: left;
+  padding-top: 20px;
+  width: 15%;
+  background-color: antiquewhite;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  float: left;
 }
 
 #Sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #Sidebar li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #Sidebar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 #Content {
-    flex: 1; /* 콘텐츠 영역이 나머지 공간을 채움 */
-    padding: 20px;
-    background-color: whitesmoke;
+  flex: 1; 
+  padding: 20px;
+  background-color: whitesmoke;
 }

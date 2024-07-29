@@ -1,0 +1,24 @@
+.main_inner_section {
+  width: 80%;
+  margin-left: auto;
+}
+
+.cancel_info_body {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.cancel_info_body .img_box .item_img{
+  background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/96x96ex/image/retail/images/1787697738516763-2d02e4ae-45b4-47e8-9cbe-17ea49fe45a8.jpg");
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.cancel_info_area {
+  border: 2px solid slategray;
+}
+
+.cancel_info_body > :nth-child(n) {
+  width: 25%;
+}

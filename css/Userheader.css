@@ -1,6 +1,6 @@
 /** 공통 영역 */
 * {
-  margin : 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -19,8 +19,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
 
-/** header 영역 */
+/** 헤더 영역 */
 
 .menu_bar {
   display: flex;
@@ -36,50 +39,55 @@ body {
 
 .category_list {
   height: 60px;
-  background-color: #EDF5FE;
+  background-color: #edf5fe;
 }
 
 .category_name {
-  display: none;
   text-align: center;
   margin-top: 20px;
 }
+.fa-bars {
+  cursor: pointer;
+}
 
 .category_list i {
-  font-size : 3em;
+  font-size: 3em;
   width: 100px;
   text-align: center;
   line-height: 60px;
+}
+
+.dropdown_content ul {
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: absolute;
+}
+
+.dropdown_content ul li {
+  cursor: pointer;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .logo_box {
   width: 500px;
 }
 
-
 .logo_box img {
   max-width: 100%;
 }
 
-.search_area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #EDF5FE;
-  height: 50px;
-  width: 370px;
-  border-radius: 8px;
-  background-color: #EDF5FE;
-}
-
 .search_area .search {
-  width: 300px;
+  width: 430px;
   border: none;
   outline: 0;
-  background-color: #EDF5FE;
   font-weight: 500;
   font-size: 22px;
-
 }
 
 .search_area i {
@@ -88,7 +96,7 @@ body {
 }
 
 .search_area input::placeholder {
-  color: #49454F;
+  color: #49454f;
 }
 
 .right_area {
@@ -101,30 +109,211 @@ body {
 
 .right_area i {
   font-size: 3em;
-  color: #007AFF;
+  color: #007aff;
 }
 
 .right_area img {
   height: 50px;
 }
 
-
-section {
-  width: 100%;
-  height: 500px;
-  background-color: #007AFF;
+#searchIcon {
+  cursor: pointer;
 }
 
-#floatingImage {
-  width: 50px;
+.search_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #efefef;
   height: 50px;
-  position: fixed; /* 화면에 고정된 위치를 설정 */
-  right: 120px; /* 오른쪽 경계로부터 20px 떨어진 곳에 위치 */
-  bottom: 120px; /* 하단 경계로부터 20px 떨어진 곳에 위치 */
-  cursor: pointer; /* 마우스 오버 시 포인터 모양 변경 */
-  color: #fff; /* 텍스트 색상을 흰색으로 설정 */
-  transition: background-color 0.3s; /* 배경색 변경 시 애니메이션 효과 적용 */
+  width: 500px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 100px;
+  position: relative; /* 상대 위치 추가 */
 }
-#floatingImage:hover {
-  opacity: 0.3; /* 마우스 호버 시 투명도를 70%로 변경 */
+
+.search_history {
+  list-style: none;
+  padding: 0;
+  width: 500px; /* 검색 영역과 동일한 너비 */
+  position: absolute; /* 절대 위치 사용 */
+  top: 50px; /* search_area의 높이만큼 아래로 설정 */
+  left: 0; /* 왼쪽 정렬 */
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px; /* 드롭다운의 최대 높이 제한 */
+  overflow-y: auto; /* 스크롤 가능 */
+  z-index: 1000; /* 다른 요소보다 상위에 위치 */
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+/* content1 영역 */
+#container{
+  display: flex;
+  height: 100%;
+
+}
+#navi{
+   width:150px;
+   float:left;
+  margin: 0 10px;
+}
+#navi ul{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#navi ul li{
+   width:150px;
+}
+#navi ul li img{
+   border:3px solid white;
+  max-width: 150px;
+}
+#main{
+   width:650px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+}
+#main img{
+   border:3px solid white;
+  min-width: 100%;
+  max-height: 505px;
+  
+}
+#container2{
+    
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px 12px;
+  width: 600px;
+}
+
+.section0  {
+  padding: 100px 0px;
+  margin-bottom: 40px;
+  background-color: rgb(161, 191, 218);
+  font-size: bold;
+}
+.section2  {
+  padding: 10px 0px;
+  margin-top: 40px;
+  background-color: rgb(161, 191, 218);
+  font-size: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section4  {
+  padding: 0px 0px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: bold;
+}
+
+#more {display: none;}
+#image-container {overflow: hidden;}
+#full-image {display: none;}
+
+.section5  {
+  padding: 10px 0px;
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: bold;
+}
+
+img svg {
+  max-width: 70px;
+}
+
+/* content1 */
+#container{
+  display: flex;
+  height: 100%;
+
+}
+#navi{
+   width:150px;
+   float:left;
+  margin: 0 10px;
+}
+#navi ul{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#navi ul li{
+   width:150px;
+}
+#navi ul li img{
+   border:3px solid white;
+  max-width: 150px;
+}
+#main{
+   width:650px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+}
+#main img{
+   border:3px solid white;
+  min-width: 100%;
+  max-height: 505px;
+  
+}
+#container2{
+    
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px 12px;
+  width: 600px;
+}
+
+.section0  {
+  padding: 100px 0px;
+  margin-bottom: 40px;
+  background-color: rgb(161, 191, 218);
+  font-size: bold;
+}
+.section2  {
+  padding: 10px 0px;
+  margin-top: 40px;
+  background-color: rgb(161, 191, 218);
+  font-size: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section4  {
+  padding: 0px 0px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: bold;
+}
+
+#more {display: none;}
+#image-container {overflow: hidden;}
+#full-image {display: none;}
+
+.section5  {
+  padding: 10px 0px;
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: bold;
+}
+
+img svg {
+  max-width: 70px;
 }

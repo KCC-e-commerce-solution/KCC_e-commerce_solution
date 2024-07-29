@@ -1,0 +1,93 @@
+.main_inner_section {
+  width: 80%;
+  margin-left: auto;
+}
+
+/** 주문상세내역 */
+.order_list_body {
+  border: 1px solid slategray;
+}
+
+.order_title .move_detail {
+  margin-left: auto;
+}
+
+.move_detail::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.order_item_body {
+  border: 1px solid slategray;
+}
+
+.order_img {
+  background-image: url("https://thumbnail10.coupangcdn.com/thumbnails/remote/96x96ex/image/retail/images/a35d63bc-1785-4aed-b4c5-513cebdc18d12379018203353589595.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.order_list_body {
+  width: 100%;
+}
+
+.order_item_name_text {
+  color: black;
+}
+
+.add_cart {
+  margin-left: auto;
+}
+
+.order_list_body_wrap .btn {
+  border: 3px solid #EFEFEF;
+}
+.order_list_body_wrap .btn:hover {
+  background-color: #F1F4F6;
+}
+
+.order_item_body_left_area {
+  width: 60%;
+  border-right: 1px solid black;
+}
+
+.order_item_body_right_area {
+  margin: 0 auto;
+  width : 20%
+}
+
+.order_item_body_right_area .button_area {
+  width: 100%;
+}
+
+.order_item_body_left_area .order_item_title .fa-trash-can {
+  font-weight: normal;
+}
+
+.order_item_body_left_area .order_item_title .fa-trash-can:hover {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.recipient_info_header, .payment_info_header {
+  border-bottom: 2px solid black;
+}
+
+.recipient_info_body,  .payment_info {
+  border-bottom: 1px solid black;
+}
+
+.recipient_info {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.payment_info_body >:nth-child(n) {
+  flex: 1;
+}
+
+.payment_info_body > :not(:last-child) {
+  border-right: 1px solid black;
+}
+

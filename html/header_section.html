@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="../css/header_section.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="header_content">
+            <div class="user_content">
+                <div class="user_box d-flex justify-content-evenly">
+                    <div class="left_area d-flex justify-content-around">
+                        <div class="profile d-flex align-items-center">
+                            <img src="../images/profile.png" alt="profile" class="profile_img">
+                            <div class="profile_name bold fs-4">
+                                <span class="user_name">원승언</span>님</div>
+                        </div>
+                        <div class="user_info_area d-flex align-items-center">
+                            <div class="user_info me-3">
+                                <button class="user_info_btn btn">고객 맞춤 등록</button>
+                            </div>
+                            <div class="user_setting">
+                                <button class="user_setting_btn btn">설정</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_area justify-content-around align-items-center">
+                        <div class="point_img_area d-flex align-items-center">
+                            <i class="fa-solid fa-coins point_img me-3" style="color: #ffd43b"></i>
+                            <div class="point_text bold fs-5">포인트
+                            </div>
+                        </div>
+                        <div class="point_price">
+                            <div class="price bold fs-5">
+                                <span class="point_price_text">100,000</span>원</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_process_content mt-4 pb-5">
+                <div class="order_process_header d-flex justify-content-between">
+                    <div class="order_process_title d-flex align-items-center">
+                        <i class="fa-solid fa-receipt order_process_img fs-3 me-3"></i>
+                        <h4 class="order_process_text bold mb-0">진행중인 주문내역</h4>
+                    </div>
+                    <div class="order_view_area">
+                        <a href="my_page.html">
+                            <button class="order_view_all btn fs-5 bold">전체보기</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="order_process_body pt-5">
+                    <ul class="order_process_list d-flex">
+                        <li class="order_process bold">
+                            <a href="#" class="order_process_cnt fs-4 ">0</a>
+                            <div class="order_process_text mb-3 mt-3 fs-4">결제완료</div>
+                        </li>
+                        <li class="order_process bold">
+                            <a href="#" class="order_process_cnt fs-4 ">0</a>
+                            <div class="order_process_text mb-3 mt-3 fs-4">배송요청</div>
+                        </li>
+                        <li class="order_process bold">
+                            <a href="#" class="order_process_cnt fs-4 ">0</a>
+                            <div class="order_process_text mb-3 mt-3 fs-4">배송준비중</div>
+                        </li>
+                        <li class="order_process bold">
+                            <a href="#" class="order_process_cnt fs-4 ">0</a>
+                            <div class="order_process_text mb-3 mt-3 fs-4">배송중</div>
+                        </li>
+                        <li class="order_process bold">
+                            <a href="#" class="order_process_cnt fs-4 ">0</a>
+                            <div class="order_process_text mb-3 mt-3 fs-4">배송완료</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu_content mt-5 pb-5 mb-5">
+                <div class="menu_area mb-5 align-items-center">
+                    <a href="my_page.html">
+                        <i class="fa-solid fa-truck me-3"></i>
+                        <span class="menu_text fs-6">주문/배송조회</span>
+                    </a>
+                </div>
+                <div class="menu_area mb-5 align-items-center">
+                    <a href="cancel_page.html">
+                        <i class="fa-solid fa-shop-slash me-3"></i>
+                        <span class="menu_text fs-6">취소내역</span>
+                    </a>
+                </div>
+                <div class="menu_area mb-5 align-items-center">
+                    <a href="address_page.html">
+                        <i class="fa-solid fa-map-location-dot me-3"></i>
+                        <span class="menu_text fs-6">배송지관리</span>
+                    </a>
+                </div>
+                <div class="menu_area align-items-center">
+                    <a href="#">
+                        <i class="fa-regular fa-credit-card me-3"></i>
+                        <span class="menu_text fs-6">결제관리</span>
+                    </a>
+                </div>
+                <div class="menu_area align-items-center">
+                    <a href="#">
+                        <i class="fa-solid fa-heart-circle-plus me-3"></i>
+                        <span class="menu_text fs-6">찜한상품</span>
+                    </a>
+                </div>
+                <div class="menu_area align-items-center">
+                    <a href="#">
+                        <i class="fa-solid fa-feather me-3"></i>
+                        <span class="menu_text fs-6">리뷰내역</span>
+                    </a>
+                </div>
+            </nav>
+        </section </body>
+    </html>

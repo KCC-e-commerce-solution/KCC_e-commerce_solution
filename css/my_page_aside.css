@@ -1,0 +1,26 @@
+.side_menu {
+  margin: 0 50px;
+}
+
+.side_menu ul {
+  position: sticky;
+  top: 50px;
+  background-color: #F1F4F6;
+  border-radius: 23px;
+  width: 70px;
+}
+
+.side_menu ul li   {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.side_menu ul li:not(:last-child) {
+  border-bottom: 2px solid #366a8d;
+}
+
+.side_menu ul li i {
+  font-size: 2em;
+}
+
