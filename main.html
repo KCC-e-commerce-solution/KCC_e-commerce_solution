@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/mainStyles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- 슬라이더 섹션 -->
+    <div class="slider">
+      <div class="slides">
+        <img src="images/ad1.png" alt="Ad 1" class="slide" />
+        <img src="images/ad2.png" alt="Ad 2" class="slide" />
+        <img src="images/ad3.png" alt="Ad 3" class="slide" />
+        <img src="images/ad4.png" alt="Ad 4" class="slide" />
+        <img src="images/ad5.png" alt="Ad 5" class="slide" />
+        <img src="images/ad6.png" alt="Ad 6" class="slide" />
+      </div>
+      <!-- 슬라이드 네비게이션 점들 -->
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div id="allProd">
+      <button id="all">전체상품</button>
+      <button id="highPrice">높은가격순</button>
+      <button id="lowPrice">낮은가격순</button>
+      <button id="sale">할인순</button>
+      <button id="likeItems">찜</button>
+
+      <button id="comparator">비교</button>
+    </div>
+
+    <!-- 모달 컨테이너 -->
+    <div id="modal-container" style="display: none"></div>
+
+    <!-- 제품 목록 섹션 -->
+    <div id="products"></div>
+    <!-- 페이지네이션 링크 -->
+    <div id="pagination"></div>
+
+    <script src="js/mainScript.js"></script>
+  </body>
+</html>

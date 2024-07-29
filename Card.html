@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>카드 애니메이션</title>
+  <style>
+    .card {
+      width: 360px;
+      height: 590px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.5s ease-in-out;
+      transform: translateY(100%);
+      margin-left: 35%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body style="background-color: #a1bfda; opacity: 5px;">
+  <div class="card">
+    <img src="./images/card.png" alt="카드 이미지">
+  </div>
+  <script>
+    const card = document.querySelector('.card');
+    
+    window.addEventListener('load', () => {
+      card.style.transform = 'translateY(0)';
+      setTimeout(() => {
+        window.location.href = 'Payment.html';
+        }, 1500);
+      });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// 차트를 생성할 준비
+let ctx = document.getElementById('myChart').getContext('2d');
+let chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [],
+        datasets: [{
+            label: '상품 조회 시간 (ms)',
+            data: [],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// 데이터를 업데이트하는 함수
+function updateData(imageId) {
+    // localStorage에서 데이터를 불러옴
+    let keys = Object.keys(localStorage);
+    let values = keys.map(key => JSON.parse(localStorage.getItem(key)).stayDuration);
+    
+    // 클릭된 이미지와 최근 내역을 업데이트
+    let lastTwoKeys = chart.data.labels.slice();
+  
+    let lastTwoValues = chart.data.datasets[0].data.slice();
+
+
+    if (lastTwoKeys.includes(imageId)) {
+        let index = lastTwoKeys.indexOf(imageId);
+ 
+        lastTwoValues[index] = JSON.parse(localStorage.getItem(imageId)).stayDuration;
+     
+    } else {
+        lastTwoKeys.push(imageId);
+        lastTwoValues.push(JSON.parse(localStorage.getItem(imageId)).stayDuration);
+        if (lastTwoKeys.length > 2) {
+            lastTwoKeys.shift();
+            lastTwoValues.shift();
+        }
+    }
+
+    // 차트를 업데이트
+    chart.data.labels = lastTwoKeys;
+    chart.data.datasets[0].data = lastTwoValues;
+    chart.update();
+}
+
+// 500ms마다 데이터를 업데이트
+setInterval(() => {
+    let keys = Object.keys(localStorage);
+    if (keys.length > 0) {
+        updateData(keys[keys.length - 1]);
+    }
+}, 500);
+
+// 이미지 클릭 이벤트를 처리하는 함수
+function imageClick(imageId) {
+    updateData(imageId);
+}
+</script>
+
+</body>
+</html>

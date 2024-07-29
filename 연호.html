@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      .table,
+      .table th,
+      .table td {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 8px;
+      }
+      .table th {
+        background-color: #f2f2f2;
+      }
+      input[type='checkbox'],
+      input[type='text'],
+      input[type='date'],
+      input[type='number'],
+      select {
+        margin: auto;
+        display: block;
+        width: 100%;
+      }
+      .button,
+      .action-button {
+        color: white;
+        background-color: #007bff; /* 진한 파란색 배경 */
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .filters {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      select {
+        padding: 5px;
+        width: auto; /* select의 기본 너비 조정 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" /></th>
+                      <th>주문번호</th>
+                      <th>결제상태</th>
+                      <th>상품명</th>
+                      <th>주문일자</th>
+                      <th>상품가격</th>
+                      <th>수량</th>
+                      <th>상태</th>
+                      <th>배송완료일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>12345</td>
+                      <td>
+                        <select>
+                          <option>N</option>
+                          <option>Y</option>
+                        </select>
+                      </td>
+                      <td>상품명 예시</td>
+                      <td><input type="date" value="2021-08-12" /></td>
+                      <td>20000 원</td>
+                      <td><input type="number" value="1" /></td>
+                      <td>배송준비중</td>
+                      <td>2021-08-14</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="filters">
+                  <label for="courier-select">택배사 선택:</label>
+                  <select id="courier-select">
+                    <option value="">전체</option>
+                    <option value="cj">CJ대한통운</option>
+                    <option value="post">우체국택배</option>
+                    <option value="logen">로젠택배</option>
+                    <option value="hanjin">한진택배</option>
+                    <option value="lotte">롯데택배</option>
+                  </select>
+                  <button class="action-button">필터 적용</button>
+                </div>
+                <button class="action-button">전체선택</button>
+                <button class="action-button">선택발송</button>
+                <button class="action-button">엑셀로 저장</button>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>주문번호</th>
+                      <th>결제상태</th>
+                      <th>상품명</th>
+                      <th>주문일자</th>
+                      <th>상품가격</th>
+                      <th>수량</th>
+                      <th>상태</th>
+                      <th>배송완료일</th>
+                      <th>조치</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>3279</td>
+                      <td>
+                        <select>
+                          <option>N</option>
+                          <option>Y</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select>
+                          <option>CJ대한통운</option>
+                          <option>우체국택배</option>
+                          <option>로젠택배</option>
+                          <option>한진택배</option>
+                          <option>롯데택배</option>
+                        </select>
+                      </td>
+
+                      <td>2021-07-12</td>
+                      <td>20,000원</td>
+                      <td><input type="number" value="1" /></td>
+                      <td>배송준비중</td>
+                      <td>2021-07-14</td>
+                      <td><button class="button">선택발송</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Userheader.css" />
+    <title>Document</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+      integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav class="menu_bar">
+      <div class="category">
+        <ul class="category_list ps-0">
+          <i class="fa-solid fa-bars"></i>
+          <!-- 숨겨진 카테고리 목록 -->
+          <li class="category_name dropdown_content">
+            <ul>
+              <li>셔츠</li>
+              <li>신발</li>
+              <li>주방용품</li>
+              <li>생활용품</li>
+              <li>홈인테리어</li>
+              <li>가전디지털</li>
+              <li>스포츠/레저</li>
+              <li>자동차용품</li>
+              <li>도서</li>
+              <li>완구</li>
+              <li>식품</li>
+              <li>문구</li>
+              <li>반려동물용품</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo_box">
+        <a href="UserShopping.html"
+          ><img src="images/header.png" alt="logo"
+        /></a>
+      </div>
+      <div class="search_area">
+        <input
+          type="text"
+          name=""
+          id="searchContent"
+          class="search"
+          placeholder="찾고 싶은 상품을 검색해주세요!"
+        />
+        <i id="searchIcon" class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        <ul id="searchHistory" class="search_history"></ul>
+      </div>
+
+      <div class="right_area">
+        <!-- 승언오빠 화면 이동 -->
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="./html/my_page.html"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><img src="../images/cart_logo.png" alt="cart_logo" /></a>
+      </div>
+    </nav>
+  </body>
+</html>
