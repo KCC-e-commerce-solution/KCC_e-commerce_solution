@@ -6,12 +6,12 @@
 }
 .comment-info {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between; /* 버튼과 텍스트를 양쪽 끝으로 배치 */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
 .date-container {
-  font-size: 12px; 
+  font-size: 12px; /* 날짜 폰트 크기 조절 */
 }
 
 .comment-content {
@@ -22,8 +22,8 @@
 
 /* -- 질문 -- */
 .question-button1 {
-  background-color: #777777; 
-  color: white; 
+  background-color: #777777; /* 버튼 배경색 */
+  color: white; /* 버튼 글자색 */
   padding: 7px 18px;
   text-align: center;
   text-decoration: none;
@@ -34,8 +34,8 @@
 }
 /* -- 답변 -- */
 .question-button2 {
-  background-color: #346aff; 
-  color: white; 
+  background-color: #346aff; /* 버튼 배경색 */
+  color: white; /* 버튼 글자색 */
   padding: 7px 18px;
   text-align: center;
   text-decoration: none;
@@ -78,7 +78,7 @@
   top: 0;
 }
 .filled-stars {
-  color: #FFD700; 
+  color: #FFD700; /* 별 색상 */
 }
 .detail-view {
   display: none;

@@ -35,6 +35,7 @@
     <script>
       function includeHTML() {
         var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
         z = document.getElementsByTagName('*');
         for (i = 0; i < z.length; i++) {
           elmnt = z[i];
@@ -47,6 +48,7 @@
                   elmnt.innerHTML = this.responseText;
 
                   // 바디에 추가할 html에 해당하는 js 가 동작하기 위한 코드 (최대한 하나의 js 파일로 하는게 나을듯)
+
                   if (file === 'pay.html') {
                     var script = document.createElement('script');
                     script.src = './js/pay.js';
@@ -62,6 +64,7 @@
             };
             xhttp.open('GET', file, true);
             xhttp.send();
+            /*exit the function:*/
             return;
           }
         }

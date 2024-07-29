@@ -537,16 +537,18 @@ $(function img() {
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        
+        // Open a new tab and load r.html
         let resultWindow = window.open('DetailShopping.html');
-      
+        // Check if the window is successfully opened
         if (resultWindow) {
           resultWindow.onload = function () {
-          
+            // Access the document of the new tab
             const resultDoc = resultWindow.document;
 
+            //navi_ul의 li용
             const resultul = resultDoc.getElementById('navi_ul');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `      
               <li><a href="${item.apple1}"><img src="${item.apple1}" alt="해당없음"></a></li>
@@ -595,6 +597,7 @@ $(function img() {
             //물품 상세정보
             let resultmyTabContent = resultDoc.getElementById('myTabContent');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
               <div class="tab-pane" id="Description" role="tabpanel" aria-labelledby="Description-tab">
@@ -835,6 +838,7 @@ $(function img() {
             const resulimage_container =
               resultDoc.getElementById('imagecontainer');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `      
                 <img src="${item.anotationsm}" alt="긴 사진" id="partial-image" style="max-width: 1300px;">
@@ -850,6 +854,7 @@ $(function img() {
             //top_product
             let resulttop_product = resultDoc.getElementById('top_product');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -881,6 +886,7 @@ $(function img() {
             //top_product1
             let resulttop_product1 = resultDoc.getElementById('top_product1');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -912,6 +918,7 @@ $(function img() {
             //top_product2
             let resulttop_product2 = resultDoc.getElementById('top_product2');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -943,6 +950,7 @@ $(function img() {
             //top_product3
             let resulttop_product3 = resultDoc.getElementById('top_product3');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -986,17 +994,19 @@ $(function img() {
 });
 
 
-/* 상품평 정렬(베스트순/최신순) */
-$(document).ready(function() {
 
+$(document).ready(function() {
+  // 이미지에 클릭 이벤트 리스너를 추가하는 함수
   function addClickListener(id) {
-    $(id).on('click', 'img', function() { 
+    $(id).on('click', 'img', function() { // 이미지 요소만 선택
       const $this = $(this);
       const imageSrc = $this.attr('src');
 
+      // 이미지를 클릭한 시간을 저장
       const startTime = new Date();
       console.log(startTime);
 
+      // 로컬 스토리지에서 값을 확인
       const isTimerActive = localStorage.getItem('myKey') === 'true';
 
       // 타이머 시작
@@ -1005,12 +1015,15 @@ $(document).ready(function() {
           clearInterval(timer);
           const endTime = new Date();
 
+          // 머무른 시간을 계산 (밀리초 단위)
           const duration = endTime - startTime;
 
+          // 결과를 JSON 형식으로 변환
           const result = JSON.stringify({ stayDuration: duration });
 
-          console.log(imageSrc + ': ' + result);
+          console.log(imageSrc + ': ' + result); // 이미지 src를 id로 사용
 
+          // 결과를 localStorage에 저장
           localStorage.setItem(imageSrc, result);
         }
       }, 500);

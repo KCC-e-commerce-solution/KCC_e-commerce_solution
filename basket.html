@@ -147,14 +147,14 @@
         });
 
 
-        // modal 전용
+        //modal 전용
         $(document).ready(function() {
           $('#staticBackdrop').on('click', '.btn-primary', function() {
-            
+            // 체크박스 해제
             $("input[type=checkbox]").prop('checked', false);
-            
+            // 총액 업데이트 함수 호출
             update_total_amount();
-            
+            // 모달 인스턴스를 가져와서 닫기
             var myModal = bootstrap.Modal.getInstance($('#staticBackdrop'));
             //myModal.hide();
           });

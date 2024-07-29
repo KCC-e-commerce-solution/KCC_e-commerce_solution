@@ -1,5 +1,174 @@
-// json 삽입
-// 서버에서 JSON 형식으로 제품 데이터를 로드
+// $(function() {
+//   $('img').click(function() {
+//     //console.log('aaaaa');
+//     $('#dictionary').empty();
+//     $.ajax({
+//       // 객체 형식으로 넣어주어야 함
+//       url: '/json/a.json',
+//       type: 'get',
+//       dataType: 'json',
+//       success: function(data) {
+//         $('#result').empty();
+
+//         // 결과값 : 배열 => [{},{},{}] => HTML
+//         $.each(data, function(index, item) {
+//           let html = '<div class="entry">';
+//           html += '<h3 class="term">' + item.term + '</h3>';
+//           html += '<div class="part">' + item.part + '</div>';
+//           html += '<div class="definiton">' + item.definition + '</div>';
+//           html += '</div>';
+
+//           $('#result').append(html); //id가 "dictionary"인 HTML 요소를 선택 후 선택된 요소의 마지막 자식 요소로 html 변수에 저장된 HTML 문자열을 삽입
+//           window.open('result.html');
+//         });
+//       },
+//       error: function(xhr, status, error) {
+//         // 실패했을 때 에러 내용을 콘솔에 출력
+//         console.error('Ajax 요청 실패:', status, error);
+//         console.error(xhr);
+//       }
+//     });
+
+//     return false;
+//   });
+// });
+
+/*
+$(function () {
+  $('.test').click(function () {
+    // AJAX 요청을 통해 JSON 데이터 불러오기
+    $.ajax({
+      url: '../json/a.json',
+      type: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        // 새 창을 열고 기본 HTML 구조 설정
+        let resultWindow = window.open();
+        resultWindow.document.write(
+          '<html>' + '<head>' + 
+          '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">' +
+          '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>' +
+          '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>' +
+          '<link rel="stylesheet" href="./css/Userheader.css">' +
+          '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>' +
+          '<script type="text/javascript" src="./js/main.js"></script>' +
+          '<script type="text/javascript" src="./js/json.js"></script>' +
+          '</head><body><div id="result"></div></body></html>'
+        );
+
+        // 결과 데이터를 새 창의 #result 요소에 추가
+        let resultDiv = resultWindow.document.getElementById('result');
+        data.forEach((item) => {
+          let html = '<div class="entry">';
+          html += '<h3 class="term">' + item.term + '</h3>';
+          html += '<div class="part">' + item.part + '</div>';
+          html += '<div class="definition">' + item.definition + '</div>';
+          html += '</div>';
+
+          resultDiv.insertAdjacentHTML('beforeend', html);
+          console.log("1")
+        });
+      },
+      error: function (xhr, status, error) {
+        console.error('Ajax 요청 실패:', status, error);
+      },
+    });
+
+    return false; // 기본 이벤트 방지
+  });
+});
+*/
+/*
+$(function() {
+  $('.test').click(function() {
+      $.ajax({
+          url: '../json/a.json',
+          type: 'GET',
+          dataType: 'json',
+          success: function(data) {
+              // 새 창을 열고 기본 HTML 구조 설정
+              let resultWindow = window.open();
+              resultWindow.document.write(`
+                  <html>
+                  <head>
+                      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+                      <link rel="stylesheet" href="./css/Userheader.css">
+                  </head>
+                  <body>
+                      <div id="result"></div>
+                  </body>
+                  </html>
+              `);
+              
+              
+              // 결과 데이터를 새 창의 #result 요소에 추가
+              let resultDiv = resultWindow.document.getElementById('result');
+              data.forEach(item => {
+                  let html = `
+                      <div class="entry">
+                          <h3 class="term">${item.term}</h3>
+                          <div class="part">${item.part}</div>
+                          <div class="definition">${item.definition}</div>
+                      </div>
+                  `;
+                  resultDiv.insertAdjacentHTML('beforeend', html);
+              });
+          },
+          error: function(xhr, status, error) {
+              console.error('Ajax 요청 실패:', status, error);
+          }
+      });
+
+      return false;
+  });
+});
+*/
+
+/*
+$(function() {
+  $('#navi a').click(function(event) {
+      event.preventDefault();
+
+      // 클릭된 a 태그의 href 속성 값 가져오기
+      const newImageSrc = $(this).attr('href');
+
+      // #main 영역의 첫 번째 이미지 src 속성 변경
+      $('#main img:first').attr('src', newImageSrc);
+  });
+});
+*/
+/*
+// 버튼작동
+$(document).ready(function () {
+  // Remove the data-toggle attribute as Bootstrap 4 doesn't require it
+  $('.nav-link').removeAttr('data-toggle');
+
+  // Add a click event handler to the tab links
+  $('.nav-link').click(function (event) {
+      // Prevent default link behavior
+      event.preventDefault();
+
+      // Remove active class from all tabs
+      $('.nav-link').removeClass('active');
+
+      // Add active class to the clicked tab
+      $(this).addClass('active');
+
+      // Get the target content ID from the href attribute
+      var targetContentId = $(this).attr('href');
+
+      // Hide all tab content divs
+      $('.tab-pane').hide();
+
+      // Show the target content div
+      $(targetContentId).show();
+  });
+});
+*/
+
+//json 삽입
 $(function img() {
   $('#products').click(function () {
     $.ajax({
@@ -7,17 +176,18 @@ $(function img() {
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        
+        // Open a new tab and load r.html
         let resultWindow = window.open('DetailShopping.html');
-        
+        // Check if the window is successfully opened
         if (resultWindow) {
           resultWindow.onload = function () {
-          
+            // Access the document of the new tab
             const resultDoc = resultWindow.document;
 
-            // 싱픔 이미지
+            //navi_ul의 li용
             const resultul = resultDoc.getElementById('navi_ul');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `      
               <li><a href="${item.apple1}"><img src="${item.apple1}" alt="해당없음"></a></li>
@@ -28,7 +198,7 @@ $(function img() {
               resultul.insertAdjacentHTML('beforeend', html);
             });
 
-            // 상품 정보
+            //상품 정보
             let resultproduct = resultDoc.getElementById('product_text');
 
             data.forEach((item) => {
@@ -63,9 +233,10 @@ $(function img() {
               resultproduct.insertAdjacentHTML('beforeend', html);
             });
 
-            // 물품 상세 정보
+            //물품 상세정보
             let resultmyTabContent = resultDoc.getElementById('myTabContent');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
               <div class="tab-pane" id="Description" role="tabpanel" aria-labelledby="Description-tab">
@@ -267,6 +438,7 @@ $(function img() {
             const resulimage_container =
               resultDoc.getElementById('imagecontainer');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `      
                 <img src="${item.anotationsm}" alt="긴 사진" id="partial-image" style="max-width: 1300px;">
@@ -279,8 +451,10 @@ $(function img() {
               resulimage_container.insertAdjacentHTML('beforeend', html);
             });
 
+            //top_product
             let resulttop_product = resultDoc.getElementById('top_product');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -309,8 +483,10 @@ $(function img() {
               resulttop_product.insertAdjacentHTML('beforeend', html);
             });
 
+            //top_product1
             let resulttop_product1 = resultDoc.getElementById('top_product1');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -339,8 +515,10 @@ $(function img() {
               resulttop_product1.insertAdjacentHTML('beforeend', html);
             });
 
+            //top_product2
             let resulttop_product2 = resultDoc.getElementById('top_product2');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">
@@ -372,6 +550,7 @@ $(function img() {
             //top_product3
             let resulttop_product3 = resultDoc.getElementById('top_product3');
 
+            // Process the data and populate the element in the new tab
             data.forEach((item) => {
               let html = `
                 <li style="display: flex; padding-top: 10px; padding-bottom: 10px;">

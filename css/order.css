@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-/* pop-up 사진 */ 
+/* pop-up 사진*/ 
 .order #item {
   max-width: 60px;
 }
@@ -37,7 +37,7 @@
 /* 카드 슬라이드 */
 .slider-container {
   overflow: hidden;
-  width: 300px;
+  width: 300px; /* 슬라이더 너비 조정 */
 }
 
 .slider {
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-/* bill 테이블 */
+/*bil 테이블 */
 #point {
   border: 1px solid color;
 }
