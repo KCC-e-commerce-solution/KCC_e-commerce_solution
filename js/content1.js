@@ -1,4 +1,3 @@
-// 사진용
 
 $(function () {
   $('#navi_ul').on('click', 'a', function (event) { // 'a' 태그 클릭 이벤트 핸들러
@@ -8,29 +7,6 @@ $(function () {
     $('#main img').attr('src', newImageSrc); // 'main' 영역의 이미지 'src' 속성 변경
   });
 });
-
-
-// $(function () {
-//   $('#navi a').click(function (event) {
-//     // 내가 누를 a 태그
-//     event.preventDefault(); //form하고  a는 기본이벤트를 가지고 있어서 해지 해야 함.
-
-//     $('#main img').before('<img src="' + $(this).attr('href') + '">'); // 여기서 this는 img - main img를 내가 클릭한 이미지로 덮어주세요.
-//     $('#main img:last').remove(); // 실제 태그를 완전히 삭제 해주세요.
-//   });
-// });
-
-//$(function() {
-//  $('#navi a').click(function(event) {
-//      event.preventDefault();
-//
-//      // 클릭된 a 태그의 href 속성 값 가져오기
-//      const newImageSrc = $(this).attr('href');
-
-//      // #main 영역의 첫 번째 이미지 src 속성 변경
-//      $('#main img:first').attr('src', newImageSrc);
-//  });
-//});
 
 // 버튼작동
 $(document).ready(function () {
@@ -106,110 +82,6 @@ function toggleMore() {
   }
 }
 
-// // 차트 용
-// // 이미지를 클릭했을 때의 시간을 저장할 변수
-// let startTime = {};
-
-// 이미지에 클릭 이벤트 리스너를 추가하는 함수
-// function addClickListener(id) {
-//     document.getElementById(id).addEventListener("click", function() {
-//         // 이미지를 클릭한 시간을 저장
-//         startTime[id] = new Date();
-
-//         // 새 창을 열고, 그 창이 닫힐 때까지 기다림
-//         let newWindow = window.open("UserShopping.html");
-//         let timer = setInterval(function() {
-//             if(newWindow.closed) {
-//                 clearInterval(timer);
-//                 let endTime = new Date();
-
-//                 // 머무른 시간을 계산 (밀리초 단위)
-//                 let duration = endTime - startTime[id];
-
-//                 // 결과를 JSON 형식으로 변환
-//                 let result = JSON.stringify({ stayDuration: duration });
-
-//                 console.log(id + ": " + result);
-
-//                 // 결과를 localStorage에 저장
-//                 localStorage.setItem(id, result);
-//             }
-//         }, 500);
-//     });
-// }
-
-/*
-let startTime = {};
-// 이미지에 클릭 이벤트 리스너를 추가하는 함수
-function addClickListener(id) {
-  document.getElementById(id).addEventListener('click', function () {
-    // 이미지를 클릭한 시간을 저장
-    startTime[id] = new Date();
-    console.log(startTime[id]);
-    console.log(startTime);
-
-    // 로컬 스토리지에서 값을 확인
-    let isTimerActive = localStorage.getItem('myKey') === 'true';
-
-    console.log(isTimerActive);
-
-    let timer = setInterval(function () {
-      if (isTimerActive === false) {
-        clearInterval(timer);
-        let endTime = new Date();
-
-        // 머무른 시간을 계산 (밀리초 단위)
-        let duration = endTime - startTime[id];
-
-        // 결과를 JSON 형식으로 변환
-        let result = JSON.stringify({ stayDuration: duration });
-
-        console.log(id + ': ' + result);
-
-        // 결과를 localStorage에 저장
-        localStorage.setItem(id, result);
-      }
-    }, 500);
-  });
-}*/
-
-// 되는거
-/*
-$(document).ready(function() {
-  // 이미지에 클릭 이벤트 리스너를 추가하는 함수
-  function addClickListener(id) {
-      $(id).on('click', function() {
-          // 이미지를 클릭한 시간을 저장
-          const startTime = new Date();
-          console.log(startTime);
-
-          // 로컬 스토리지에서 값을 확인
-          const isTimerActive = localStorage.getItem('myKey') === 'true';
-
-          // 타이머 시작
-          let timer = setInterval(() => {
-              if (!isTimerActive) {
-                  clearInterval(timer);
-                  const endTime = new Date();
-
-                  // 머무른 시간을 계산 (밀리초 단위)
-                  const duration = endTime - startTime;
-
-                  // 결과를 JSON 형식으로 변환
-                  const result = JSON.stringify({ stayDuration: duration });
-
-                  console.log(id + ': ' + result);
-
-                  // 결과를 localStorage에 저장
-                  localStorage.setItem(id, result);
-              }
-          }, 500);
-      });
-  }
-
-  addClickListener('#products');
-});
-*/
 
 $(document).ready(function() {
   // 이미지에 클릭 이벤트 리스너를 추가하는 함수
