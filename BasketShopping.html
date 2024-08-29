@@ -35,7 +35,6 @@
     <script>
       function includeHTML() {
         var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
         z = document.getElementsByTagName('*');
         for (i = 0; i < z.length; i++) {
           elmnt = z[i];
@@ -46,8 +45,6 @@
               if (this.readyState == 4) {
                 if (this.status == 200) {
                   elmnt.innerHTML = this.responseText;
-
-                  // 바디에 추가할 html에 해당하는 js 가 동작하기 위한 코드 (최대한 하나의 js 파일로 하는게 나을듯)
 
                   if (file === 'basket.html') {
                     var script = document.createElement('script');
@@ -64,7 +61,6 @@
             };
             xhttp.open('GET', file, true);
             xhttp.send();
-            /*exit the function:*/
             return;
           }
         }
@@ -74,30 +70,13 @@
   <body>
     <div class="content">
       <div w3-include-html="UserHeader.html"></div>
-      <!-- <div w3-include-html="main.html"></div> -->
-
-      <!-- body 부분에 어떤 html 파일을 넣을지 설정 -->
       <div id="main-content"></div>
-      <!-- <script>
-        $(function () {
-          $('#main-content').load('content1.html');
-          console.log(true);
-        });
-      </script> -->
 
       <script>
         $(function () {
           $('#main-content').load('basket.html');
           console.log(true);
-
-          // true 값을 로컬 스토리지에 저장
-          //localStorage.setItem('myKey', true);
         });
-
-        // user.html 창을 닫을 때 로컬 스토리지의 값 삭제
-        //window.addEventListener('beforeunload', function () {
-          //localStorage.setItem('myKey', 'false');
-        //});
       </script>
 
       <div w3-include-html="UserFooter.html"></div>
